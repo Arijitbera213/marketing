@@ -95,7 +95,7 @@ ul li:hover a {
 }
 .banner {
 	background-color: #2D9AB7;
-	background-image: url(file:///C|/Users/Arijit%20Bera/Desktop/TheEvent/lib/images/parallax.png);
+	background-image: url("parallax.png");
 	height: 200px;
 	background-attachment: fixed;
 	background-size: cover;
