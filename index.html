@@ -1,0 +1,224 @@
+<!doctype html>
+<html>
+<head>
+<title>OfFicial Steelo Marketing</title>
+<link href="steelo.css" rel="stylesheet" type="text/css">
+	<style type="text/css"> 
+
+        
+        .showSlide {  
+            display: none  
+        }  
+            .showSlide img {  
+                width: 100%;  
+            }  
+        .slidercontainer {  
+            max-width: 1600px; 
+            position: relative;  
+            margin: auto;  
+        }  
+        .left, .right {  
+            cursor: pointer;  
+            position: absolute;  
+            top: 50%;  
+            width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: white;  
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+        }  
+        .right {  
+            right: 0;  
+            border-radius: 3px 0 0 3px;  
+        }  
+            .left:hover, .right:hover {  
+                background-color: rgba(115, 115, 115, 0.8);  
+            }  
+        .content4 {  
+            color: #eff5d4;  
+            font-size: 30px;  
+            padding: 8px 12px;  
+            position: absolute;  
+            top: 500px;  
+            width: 100%;  
+            text-align: center;  
+        }  
+        .active {  
+            background-color: #717171;  
+        }  
+        /* Fading animation */  
+        .fade {  
+            -webkit-animation-name: fade;  
+            -webkit-animation-duration: 1.5s;  
+            animation-name: fade;  
+            animation-duration: 1.5s;  
+        }  
+        @-webkit-keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        }  
+  
+        @keyframes fade {  
+            from {  
+                opacity: .4  
+            }  
+            to {  
+                opacity: 1  
+            }  
+        } 
+
+            #leftbox { 
+                float:left;  
+                background: rgba(0,0,0,0.4);
+				background-color: black;
+                width:33%; 
+                height:300px; 
+				color: #fff;
+            } 
+            #middlebox{ 
+                float:left;  
+                 background: rgba(0,0,0,0.4);
+				background-color: black;
+                width:34%; 
+                height:300px; 
+				color: #fff;
+            } 
+            #rightbox{ 
+                float:right; 
+               background: rgba(0,0,0,0.4);
+				background-color: black;
+                width:33%; 
+                height:300px; 
+				color: #fff;
+            } 
+           
+</style>
+	
+	 
+	
+</head>
+<body>
+<div class="container"> 
+  
+	<header> 
+    <h4 class="logo">Steelo LTD.</h4>
+    
+    <nav>
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+		  <li><a href="careers.html">CAREERS</a></li>
+        <li><a href="about.html">ABOUT</a></li>
+        <li> <a href="contact.html">CONTACT</a></li>
+		  <li><a href="login.html">SIGNOUT</a></li>
+		  <li> <input type="text" placeholder="Search."></li>
+      </ul>
+    </nav>
+</header>
+	</div>
+<div class="slidercontainer">  
+        <div class="showSlide fade">  
+            <img src="1.jpg" alt="first"  height="700" />  
+            <div class="content4"><h4>Vijayanagar Plant </h4>
+			<h6><p>Plant won the prestigious Prime Minister’s Trophy for excellence in performance of Integrated Steel Plants for the year 2012-13.</p></h6></div>  
+        </div>  
+        <div class="showSlide fade">  
+            <img src="gold-eagle-shield-vector-1030341.jpg"  alt="fourth" height="700"/>  
+            <div class="content4"><h4>CII-EXIM Bank Business Excellence Award - 2014</h4>
+	<p> Commendation Certificate for Significant Achievement received on November20, 2014</p></div>  
+        </div>  
+  
+        <div class="showSlide fade">  
+            <img src="trophy-cup-on-black-background-2A7WTM3.jpg" alt="second" height="700"/>  
+            <div class="content4"><h4>IMC Ramakrishna Bajaj National Quality Award 2014: </h4>
+			  <p> Won the IMC Ramakrishna Bajaj National Quality Award in the Manufacturing Category award received on March 20, 2015.</p></div>  
+        </div>  
+		<a class="left" onclick="nextSlide(-1)">❮</a>  
+        <a class="right" onclick="nextSlide(1)">❯</a>  
+    </div>  
+  <script type="text/javascript">  
+        var slide_index = 1;  
+        displaySlides(slide_index);  
+  
+        function nextSlide(n) {  
+            displaySlides(slide_index += n);  
+        }  
+  
+        function currentSlide(n) {  
+            displaySlides(slide_index = n);  
+        }  
+  
+        function displaySlides(n) {  
+            var i;  
+            var slides = document.getElementsByClassName("showSlide");  
+            if (n > slides.length) { slide_index = 1 }  
+            if (n < 1) { slide_index = slides.length }  
+            for (i = 0; i < slides.length; i++) {  
+                slides[i].style.display = "none";  
+            }  
+            slides[slide_index - 1].style.display = "block";  
+        }  
+    </script>  
+  
+	<section>
+    <div id = "boxes"> 
+		<center><h1> Team Achievements</h1></center>
+      <div id = "leftbox"> 
+                <center><h2>ICQCC</h2> 
+                International Convention on Quality Circle Chapter (ICQCC): 
+				Gold Award to Innovator Quality Circle Team” from SMS-II
+				received on October 15, 2014 at Sri Lanka.</center>
+            </div>  
+              
+      <div id = "middlebox"> 
+                <center><h2>NCQC</h2> 
+                National Convention on Quality Circle (NCQC): Three teams 
+				(Innovators - SMS-2, Janani-BF3, and Abhimanyu-BF4) were conferred 
+				with Par Excellence award, which is the highest honour in the category 
+				and one team (Sarthak-Coke Oven) was adjudged excellent award, the second 
+				highest honour and was received on December 22, 2014 at Pune.</center>
+            </div> 
+              
+      <div id = "rightbox"> 
+               <center><h2>CHAPTER Convention </h2> 
+                Chapter Convention on Quality Circle (CCQC) All the teams 
+				(Innovators – SMS-2, Janani-BF3, and Abhimanyu-BF4, Sarthak – Coke
+				Oven)were conferred with Gold award on September 7, 2014 at Bengaluru.</center>
+      </div> 
+    </div> </section>
+<div class="gallery">
+    <div class="thumbnail">
+      <h1 class="stats">15+</h1>
+      <h4>Countries</h4>
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">2300+</h1>
+      <h4>Shipments</h4>
+      
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">75+</h1>
+      <h4>Project sites</h4>
+      
+    </div>
+    <div class="thumbnail">
+      <h1 class="stats">9870+</h1>
+      <h4>Employees</h4>
+    </div>
+  </div>
+  
+<section class="banner">
+    <h2 class="parallax">Location and address</h2><p class="parallax_description1">
+	  H11,21sector b lane , near rock recengy
+	  ,belads, Uk, 12342</p>    
+    <p class="parallax_description">contact no.: 32488433432 email.id:steeloltd@gmail.com</p>
+  </section>
+  
+</body>
+</html>
